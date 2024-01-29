@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+	<head>
+		<title>Weather</title>
+		<meta http-equip='Content-type' content = "text/html" charset='utf-8'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel='stylesheet' href='css/style.css'>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div>
+				<div class="forecast">Weather forecast</div>
+				<div class="date"></div>
+			</div>
+			<div style="display: flex; justify-content: center; margin-bottom: 40px;">
+				<select class="countries" name="countries" id="">
+					<option value="1">Belarus</option>
+				</select>
+				<select name="cities" class="list">
+					<option selected value="1">Minsk</option>
+					<option value="2">Lyntupy</option>
+				</select>
+			</div>
+			<div class="current-block">
+				<div class="temperature-text">Temperature</div>
+				<div class="current-weather"></div>
+				<div class="current__condition">
+					<img class="condition__img" alt="">
+				</div>
+				<div class="condition__text2">
+					Feels like: <span class="condition__deg"></span>
+				</div>
+				<div class="condition__text"></div>
+			</div>
+			<div class="current-weather"></div>
+			<div class="container"></div>
+
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
